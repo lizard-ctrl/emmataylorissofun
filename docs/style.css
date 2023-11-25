@@ -447,8 +447,29 @@ padding-top: 50%;
 
 
 
+  .img2 {
+    width: 50%;
+    float: left;
+    background:url('imgs/fish.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  padding-top: 50%;
+    }
+  
+  
+  .gif2 {
+    color:white;
+    width: 50%;
+    float: left;
+    background:url('imgs/ezgif-1-a9df8bfd5a.gif') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50%;
+    }
 
-
+/*
 .img2 {
   width: 50%;
   float: left;
@@ -471,7 +492,7 @@ padding-top: 50%;
   padding-top: 50%;
   }
 
-
+*/
 
 
 
@@ -479,7 +500,7 @@ padding-top: 50%;
 .img3 {
   width: 50%;
   float: left;
-  background:url('https://cdn.glitch.global/aa288124-303c-461b-9203-981b772fc458/ezgif-1-9b11376064.gif?v=1673541705320') ;
+  background:url('https://cdn.glitch.global/aa288124-303c-461b-9203-981b772fc458/ezgif-4-47e404545c.gif?v=1673505837085') ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -491,7 +512,7 @@ padding-top: 50%;
   color:white;
   width: 50%;
   float: left;
-  background:url('https://cdn.glitch.global/aa288124-303c-461b-9203-981b772fc458/ezgif-1-7c80b9c95e.gif?v=1673541696922') ;
+  background:url('https://cdn.glitch.global/aa288124-303c-461b-9203-981b772fc458/ezgif-4-928683e373.gif?v=1673505844543') ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -502,7 +523,7 @@ padding-top: 50%;
 
 
 
-.img4 {
+.img10 {
   width: 50%;
   float: left;
   background:url('https://cdn.glitch.global/aa288124-303c-461b-9203-981b772fc458/ezgif-4-94a391a7d6.gif?v=1699591789466') ;
@@ -513,7 +534,7 @@ padding-top: 50%;
   }
 
 
-.gif4 {
+.gif10 {
   color:white;
   width: 50%;
   float: left;
@@ -599,6 +620,27 @@ padding-top: 50%;
   padding-top: 50%;
   }
 
+  .img9 {
+    width: 50%;
+    float: left;
+    background:url('https://cdn.glitch.global/aa288124-303c-461b-9203-981b772fc458/ezgif-2-7739303612.gif?v=1699591783831') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  padding-top: 50%;
+    }
+  
+  
+  .gif9 {
+    color:white;
+    width: 50%;
+    float: left;
+    background:url('https://cdn.glitch.global/aa288124-303c-461b-9203-981b772fc458/ezgif-4-c75e0d390e.gif?v=1699591806142') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50%;
+    }
 
 
 
@@ -674,7 +716,7 @@ blockquote {
 /* MOBILE
 -------------------------------------------------- */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 500px) {
   html,
   body, 
   p,
