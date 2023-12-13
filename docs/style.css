@@ -510,8 +510,7 @@ pre{
       position: relative;
       box-shadow: 0px 0px 25px 25px rgb(62, 32, 31);
       padding: 2%;
-      margin: auto;
-      margin-top: 14%;
+      top: 3%;
       width: 60%;
       height: 90%;
     }
