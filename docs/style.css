@@ -2,11 +2,53 @@
 
 
 body{
-  color: rgb(62, 32, 31);
-  background-color: rgb(239, 237, 234);
-  background-size: cover;
-  
+  background: rgb(186,112,154);
+  background: radial-gradient(circle, rgba(186,112,154,1) 0%, rgba(208,124,118,1) 48%, rgba(182,89,140,1) 100%);
  font-family: 'Kanit', sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  overflow: hidden;
+  z-index: -5;
+}
+
+.moving-image {
+  z-index: -5;
+  position: absolute;
+  top: 50%;
+  left: -100px; /* Start position off-screen */
+  animation: moveRight 10s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes moveRight {
+  0% {
+      left: -100px; /* Start position off-screen */
+  }
+  100% {
+      left: calc(100% + 100px); /* Move all the way to the right */
+  }
+}
+
+.moving-image2 {
+  position: absolute;
+  top: 0;
+  right: -100px; /* Start position off-screen */
+   /* Set height of your image */
+  background-image: url('your_image.jpg'); /* Replace 'your_image.jpg' with your image path */
+  background-size: cover;
+  animation: moveLeft 10s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes moveLeft {
+  0% {
+      right: -100px; /* Start position off-screen */
+  }
+  100% {
+      right: calc(100% + 100px); /* Move all the way to the left */
+  }
 }
 
 ul{
@@ -292,13 +334,14 @@ hr {
 
 
 #nav{
-  position: relative;
-  box-shadow: 0px 0px 25px 25px rgb(62, 32, 31);
+  position: absolute;
+  box-shadow: 0px 0px 25px 25px rgb(209, 186, 191);
   padding: 2%;
   margin: auto;
   margin-top: 5%;
+  left: 37%;
   width: 20%;
-  height: 65%;
+  height: 75%;
 }
 
 .row {
@@ -313,8 +356,8 @@ hr {
 }
 
 .imgstyle{
-  background-color: rgb(62, 32, 31);
-  box-shadow: 0px 0px 35px 35px rgb(62, 32, 31);
+  background-color: rgb(209, 186, 191);
+  box-shadow: 0px 0px 35px 35px rgb(209, 186, 191);
 }
 
 .circle{ 
@@ -332,7 +375,7 @@ hr {
 .circle:hover{
 
   border-radius: 60%;
-  box-shadow: 0px 0px 15px 15px rgb(62, 32, 31);
+  box-shadow: 0px 0px 15px 15px rgb(209, 186, 191);
 }
 
 #nameTab, #aboutTab, #workTab, #resumeTab{
@@ -346,7 +389,7 @@ hr {
   position: absolute;
   top: 10%;
   left: 20%;
-  box-shadow: 0px 0px 25px 25px rgb(62, 32, 31);
+  box-shadow: 0px 0px 25px 25px rgb(209, 186, 191);
   margin: auto;
   
   border-radius: 00%;
@@ -462,8 +505,8 @@ pre{
   
   
   .imgstyle{
-  background-color: rgba(62, 32, 31);
-  box-shadow: 0px 0px 15px 15px rgb(62, 32, 31);
+  background-color: rgba(209, 186, 191);
+  box-shadow: 0px 0px 15px 15px rgb(209, 186, 191);
  
 }
   .row {
@@ -507,8 +550,9 @@ pre{
     }
 
     #nav{
-      position: relative;
-      box-shadow: 0px 0px 25px 25px rgb(62, 32, 31);
+      position: absolute;
+      left: 17%;
+      box-shadow: 0px 0px 25px 25px rgb(209, 186, 191);
       padding: 2%;
       top: 3%;
       width: 60%;
