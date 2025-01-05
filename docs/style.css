@@ -1,8 +1,8 @@
 
 
 @font-face {
-  font-family: 'Fantome Regular'; /* Name to use in CSS */
-  src: url('fonts/Fantome-Regular.woff') format('woff'); /* Adjust the path as needed */
+  font-family: 'Fantome Regular'; 
+  src: url('fonts/Fantome-Regular.woff') format('woff'); 
   font-weight: normal;
   font-style: normal;
 }
@@ -11,12 +11,20 @@ body{
   display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default body margin */
- /* Optional background for better visibility */
-
+    height: 100vh;
+    margin: 0; 
   background: white;
  font-family: 'Kanit', sans-serif;
+}
+
+.footer-text {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  color: red;
+  padding: 10px -10px;
 }
 
 .random-image {
@@ -31,10 +39,10 @@ body{
 .marquee-container {
   z-index: 1000;
   position: relative;
-  text-align: center; /* Match the width of the h1 */
+  text-align: center; 
 }
 
-/* Styling the h1 */
+
 h1 {
   color: red;
   font-family: 'Fantome Regular', sans-serif;
@@ -43,20 +51,19 @@ h1 {
   margin: 0;
   display: flex;
   justify-content: center;
-  gap: 0.1em; /* Adjust spacing between letters */
+  gap: 0.1em; 
 }
 
-/* Individual letter styling */
 h1 span {
-  transition: color 0.9s ease; /* Smooth hover transition */
-  cursor: pointer; /* Indicate interactivity */
+  transition: color 0.5s ease; 
+  cursor: pointer; 
 }
 
 h1 span:hover {
-  color: chartreuse; /* Change color on hover */
+  color: black; 
 }
 
-/* Marquee container */
+
 .marquee {
   position: absolute;
   /* Position below the h1 */
@@ -72,7 +79,7 @@ h1 span:hover {
 /* Marquee content */
 .marquee-content {
   display: inline-block;
-  animation: marquee 10s linear infinite;
+  animation: marquee 25s linear infinite;
   white-space: nowrap; /* Prevent wrapping */
 }
 
@@ -106,7 +113,7 @@ h1 span:hover {
 }
 
 .link:hover {
-  color: chartreuse; /* Change background on hover */
+  color: #DB5ABA; /* Change background on hover */
   transform: scale(1.4); /* Slightly enlarge on hover */
 }
 
@@ -119,41 +126,9 @@ h1 span:hover {
   z-index: -5;
 }
 
-.moving-image {
-  z-index: -5;
-  position: absolute;
-  top: 50%;
-  left: -100px; /* Start position off-screen */
-  animation: moveRight 10s linear infinite; /* Adjust duration as needed */
-}
 
-@keyframes moveRight {
-  0% {
-      left: -100px; /* Start position off-screen */
-  }
-  100% {
-      left: calc(100% + 100px); /* Move all the way to the right */
-  }
-}
 
-.moving-image2 {
-  position: absolute;
-  top: 0;
-  right: -100px; /* Start position off-screen */
-   /* Set height of your image */
-  background-image: url('your_image.jpg'); /* Replace 'your_image.jpg' with your image path */
-  background-size: cover;
-  animation: moveLeft 10s linear infinite; /* Adjust duration as needed */
-}
 
-@keyframes moveLeft {
-  0% {
-      right: -100px; /* Start position off-screen */
-  }
-  100% {
-      right: calc(100% + 100px); /* Move all the way to the left */
-  }
-}
 
 ul{
   list-style-type: none;
@@ -523,13 +498,15 @@ hr {
 }
 
 #nameContent{
-   position: absolute;
+  position: absolute;
+  background-color: black;
+  box-shadow: 0px 0px 25px 25px black;
+  color: white;
   top: 10%;
-  left: 13%;
- 
+  left: 18.5%;
+  text-align: center;
   margin: auto;
-  
-  width: 70%;
+  width: 60%;
   height: 70%;
   padding: 3%;
   overflow: scroll;
@@ -548,10 +525,11 @@ hr {
 
 .home{
   text-align: center;
+  transition: color ease .9s;
 }
 
 .home:hover{
-  color: rgb(62, 32, 31);
+  color: red;
 }
 
 .GeneratedMarquee {
@@ -656,6 +634,8 @@ pre{
 }
 
 .textbox{
+  padding: 2%;
+  padding-bottom: 50px;
   text-align: center;
   overflow-wrap: break-word;
   word-wrap: break-word;
@@ -664,13 +644,22 @@ pre{
   .column3 {
     width: 100%;
     float: center;
-    padding: 2%;
+    padding: 1%;
     }
   
+    .column{
+      padding: 8%;
+    }
+
   .column2 {
+    display: none;
       width: 100%;
       float: center;
       padding: 2%;
+    }
+
+    .footer-text {
+      display: none;
     }
 
    

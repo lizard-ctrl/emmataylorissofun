@@ -1,25 +1,117 @@
-// Path to the folder containing the images
-const imageFolder = 'hpimages/';
-const imageCount = 12; // Total number of images
+function home() {
+    var x = document.getElementById("nameTab");
+    var a = document.getElementById("workTab");
+    var b = document.getElementById("resumeTab");
+    var c = document.getElementById("aboutTab");
+    var d = document.getElementById("nav");
 
-// Function to dynamically create image elements
+      if (d.style.display === "none") {
+        x.style.display = "none";
+        a.style.display = "none";
+        b.style.display = "none";
+        c.style.display = "none";
+        d.style.display = "block";
+      } else {
+        d.style.display = "none";
+      }
+  }
+  
+       function name() {
+    var x = document.getElementById("nameTab");
+    var a = document.getElementById("workTab");
+    var b = document.getElementById("resumeTab");
+    var c = document.getElementById("aboutTab");
+    var d = document.getElementById("nav");
+
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        a.style.display = "none";
+        b.style.display = "none";
+        c.style.display = "none";
+        d.style.display = "none";
+      } else {
+        x.style.display = "none";
+      }
+  }
+
+  function abtme() {
+    var x = document.getElementById("nameTab");
+    var a = document.getElementById("workTab");
+    var b = document.getElementById("resumeTab");
+    var c = document.getElementById("aboutTab");
+    var d = document.getElementById("nav");
+
+      if (c.style.display === "none") {
+        c.style.display = "block";
+        x.style.display = "none";
+        b.style.display = "none";
+        a.style.display = "none";
+        d.style.display = "none";
+     } else {
+        c.style.display = "none";
+     }
+  }
+  
+
+function work() {
+  var x = document.getElementById("nameTab");
+  var a = document.getElementById("workTab");
+  var b = document.getElementById("resumeTab");
+  var c = document.getElementById("aboutTab");
+  var d = document.getElementById("nav");
+
+  if (a.style.display === "none") {
+    a.style.display = "block";
+    x.style.display = "none";
+    b.style.display = "none";
+    c.style.display = "none";
+    d.style.display = "none";
+  } else {
+    a.style.display = "none";
+  }
+}
+
+function resume() {
+  var x = document.getElementById("nameTab");
+  var a = document.getElementById("workTab");
+  var b = document.getElementById("resumeTab");
+  var c = document.getElementById("aboutTab");
+  var d = document.getElementById("nav");
+
+  if (b.style.display === "none") {
+    b.style.display = "block";
+    x.style.display = "none";
+    a.style.display = "none";
+    c.style.display = "none";
+    d.style.display = "none";
+  } else {
+    b.style.display = "none";
+  }
+}
+
+
+
+
+const imageFolder = 'hpimages/';
+const imageCount = 12; 
+
+
 function loadImages() {
     const container = document.body;
 
     for (let i = 1; i <= imageCount; i++) {
         const img = document.createElement('img');
-        img.src = `${imageFolder}${i}.png`; // Assuming images are numbered 1.jpg, 2.jpg, ..., 12.jpg
+        img.src = `${imageFolder}${i}.png`; 
         img.alt = `Image ${i}`;
         img.classList.add('random-image');
-        img.style.position = 'absolute'; // Ensure images are absolutely positioned
+        img.style.position = 'absolute'; 
         container.appendChild(img);
 
-        // Position image immediately after it loads
         img.onload = () => positionImage(img);
     }
 }
 
-// Function to randomly position a single image within the bounds of the browser
+
 function positionImage(img) {
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
@@ -27,8 +119,8 @@ function positionImage(img) {
     const imgWidth = img.offsetWidth;
     const imgHeight = img.offsetHeight;
 
-    const maxLeft = viewportWidth - imgWidth; // Ensure the image doesn't go out of bounds horizontally
-    const maxTop = viewportHeight - imgHeight; // Ensure the image doesn't go out of bounds vertically
+    const maxLeft = viewportWidth - imgWidth; 
+    const maxTop = viewportHeight - imgHeight; 
 
     const randomLeft = Math.floor(Math.random() * maxLeft);
     const randomTop = Math.floor(Math.random() * maxTop);
@@ -47,29 +139,26 @@ function positionImagesRandomly() {
 function setupSpaceBarListener() {
     document.addEventListener('keydown', function (event) {
         if (event.code === 'Space') {
-            event.preventDefault(); // Prevent default behavior like scrolling
-            positionImagesRandomly(); // Reposition all images
+            event.preventDefault(); 
+            positionImagesRandomly(); 
         }
     });
 }
 
 // Initialize
 window.addEventListener('load', () => {
-    loadImages(); // Load the images dynamically
-    setupSpaceBarListener(); // Add space bar listener
+    loadImages(); 
+    setupSpaceBarListener(); 
 });
 
 
-// Adjust positions when the window resizes
+
 window.addEventListener('resize', positionImagesRandomly);
 
-// The text you want to display
 const text = "EMMA TAYLOR";
 
-// Select the h1 element
 const hoverTextElement = document.getElementById("hover-text");
 
-// Split the text into individual letters and wrap each in a <span>
 hoverTextElement.innerHTML = text
     .split("")
     .map(letter => `<span>${letter}</span>`)
