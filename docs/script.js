@@ -1,5 +1,7 @@
 const root = document.documentElement;
 const revealItems = document.querySelectorAll(".reveal");
+const tabButtons = document.querySelectorAll("[data-tab]");
+const tabPanels = document.querySelectorAll("[data-panel]");
 
 const updatePointer = (event) => {
   const x = event.clientX / window.innerWidth - 0.5;
@@ -30,3 +32,28 @@ if ("IntersectionObserver" in window) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
+
+const setActiveTab = (tabName) => {
+  tabButtons.forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.tab === tabName);
+  });
+
+  tabPanels.forEach((panel) => {
+    const isActive = panel.dataset.panel === tabName;
+    panel.classList.toggle("is-active", isActive);
+
+    if (isActive) {
+      panel.querySelectorAll(".reveal").forEach((item) => {
+        item.classList.add("is-visible");
+      });
+    }
+  });
+};
+
+tabButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    setActiveTab(button.dataset.tab);
+  });
+});
+
+setActiveTab("home");

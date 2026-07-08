@@ -41,104 +41,328 @@
       </div>
 
       <header class="site-header">
-        <a class="brand" href="#top">ETP</a>
+        <button class="brand tab-button is-active" type="button" data-tab="home">ETP</button>
         <nav class="site-nav" aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">Contact</a>
+          <button class="tab-button is-active" type="button" data-tab="home">About</button>
+          <button class="tab-button" type="button" data-tab="portfolio">Portfolio</button>
+          <button class="tab-button" type="button" data-tab="resume">Resume</button>
+          <button class="tab-button" type="button" data-tab="contact">Contact</button>
         </nav>
       </header>
 
       <main id="top">
-        <section class="hero">
-          <div class="hero-atmosphere" aria-hidden="true">
-            <div class="mist mist-one"></div>
-            <div class="mist mist-two"></div>
-            <div class="mist mist-three"></div>
+        <section class="tab-panel is-active" data-panel="home">
+          <section class="hero">
+            <div class="hero-atmosphere" aria-hidden="true">
+              <div class="mist mist-one"></div>
+              <div class="mist mist-two"></div>
+              <div class="mist mist-three"></div>
+            </div>
+
+            <div class="hero-layout">
+              <div class="hero-copy">
+                <p class="eyebrow">Digital Producer + Designer</p>
+                <h1>
+                  EMMA
+                  <span>TAYLOR</span>
+                  PAYDOS
+                </h1>
+                <p class="hero-text">
+                  Design-forward digital producer building websites, campaigns,
+                  and online experiences with editorial instinct, technical range,
+                  and a sharp visual point of view.
+                </p>
+
+                <div class="hero-tag-row" aria-label="Areas of focus">
+                  <span class="hero-tag">web production</span>
+                  <span class="hero-tag">campaign design</span>
+                  <span class="hero-tag">internet culture</span>
+                  <span class="hero-tag">creative systems</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-meta">
+              <div class="meta-card reveal">
+                <p class="meta-label">Current</p>
+                <p class="meta-value">Digital Producer at Phillips Auction House</p>
+              </div>
+              <div class="meta-card reveal">
+                <p class="meta-label">Also</p>
+                <p class="meta-value">Designer at Coco Marketing</p>
+              </div>
+              <div class="meta-card reveal">
+                <p class="meta-label">Open to</p>
+                <p class="meta-value">freelance + collaborations</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="about section reveal" id="about">
+            <div class="section-heading">
+              <p class="section-kicker">About</p>
+              <h2>Creating refined digital systems where brand, design, and usability meet.</h2>
+            </div>
+            <div class="about-grid">
+              <div class="about-copy">
+                <p>
+                  I currently live in Brooklyn and work across two roles spanning tech and design, which gives me a hybrid perspective that’s both systems-driven and visually grounded. Moving between these worlds allows me to connect creative direction with technical execution in a way that feels both practical and conceptually informed.
+                </p>
+                <p>
+                  At Phillips in New York, I manage digital production and assets for auction experiences, overseeing the full publishing workflow across CMS, Shopify, and web platforms. I ensure sale pages, campaign assets, and editorial content are accurately built, maintained, and launched across channels in a fast-moving, detail-heavy environment.
+                </p>
+                <p>
+                  I am especially interested in internet aesthetics, editorial
+                  worlds, speculative futures, and the kinds of visual details
+                  that make a brand feel unmistakable.
+                </p>
+              </div>
+              <div class="about-list">
+                <div class="detail-block">
+                  <p class="detail-label">Focus</p>
+                  <p>
+                    Digital production, web design, campaign systems, creative
+                    direction support
+                  </p>
+                </div>
+                <div class="detail-block">
+                  <p class="detail-label">Tools</p>
+                  <p>
+                    HTML, CSS, JavaScript, Python, Processing, p5.js, Adobe
+                    Creative Suite, Airtable, WordPress
+                  </p>
+                </div>
+                <div class="detail-block">
+                  <p class="detail-label">Interests</p>
+                  <p>
+                    Surveillance tech, nostalgia online, poetic uses of data, contemporary culture, surfing the web, perfumes, rollerblading, baking
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="resume section reveal">
+            <div class="section-heading">
+              <p class="section-kicker">Resume</p>
+              <h2>Experience shaped by production, design, and cultural fluency.</h2>
+            </div>
+
+            <div class="resume-grid">
+              <article class="resume-item reveal">
+                <p class="resume-period">2023 - Present</p>
+                <div>
+                  <h3>Designer</h3>
+                  <p class="resume-company">Coco Marketing</p>
+                  <p>
+                    Designer creating marketing assets and leading campaign development for clients including the Brooklyn Museum, HAAND, and Earth Tonics.
+                  </p>
+                </div>
+              </article>
+
+              <article class="resume-item reveal">
+                <p class="resume-period">2022 - Present</p>
+                <div>
+                  <h3>Digital Producer</h3>
+                  <p class="resume-company">Phillips</p>
+                  <p>
+                    Producing and maintaining online auction experiences for Phillips while supporting the broader website ecosystem, combining design thinking with hands-on technical execution across CMS, Shopify, and web systems.
+                  </p>
+                </div>
+              </article>
+
+              <article class="resume-item reveal">
+                <p class="resume-period">2022 - Present</p>
+                <div>
+                  <h3>Freelance Web Designer</h3>
+                  <p class="resume-company">Self-Employed</p>
+                  <p>
+                    Creating websites and marketing assets for record labels, small fashion brands, and artists, leading design direction and building campaigns across digital platforms.
+                  </p>
+                </div>
+              </article>
+
+              <article class="resume-item reveal">
+                <p class="resume-period">2022</p>
+                <div>
+                  <h3>STEM Instructor</h3>
+                  <p class="resume-company">iCAMP</p>
+                  <p>
+                    Helped shape curriculum and strengthened both teaching and
+                    operational workflows.
+                  </p>
+                </div>
+              </article>
+
+              <article class="resume-item reveal">
+                <p class="resume-period">2021</p>
+                <div>
+                  <h3>Programs Intern</h3>
+                  <p class="resume-company">Eyebeam</p>
+                  <p>
+                    Supported residency selection, archival work, and education
+                    programming.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="support-grid">
+              <div class="support-panel reveal">
+                <p class="section-kicker">Education</p>
+                <p class="support-title">
+                  BFA in Design and Technology, Parsons School of Design
+                </p>
+                <p class="support-text">
+                  BA in Culture and Media, Eugene Lang College of Liberal Arts
+                </p>
+              </div>
+              <div class="support-panel reveal">
+                <p class="section-kicker">Capabilities</p>
+                <p class="support-text">
+                  HTML, CSS, JavaScript, jQuery, Python, Processing, p5.js,
+                  Unity, Rhino, machine learning, physical computation, Adobe
+                  Creative Suite, Airtable, Google Workspace, WordPress
+                </p>
+              </div>
+              <div class="support-panel reveal">
+                <p class="section-kicker">Selected Programs</p>
+                <p class="support-text">
+                  Agential Worldbuilding, School of Machines, OOOHackathon, NYU
+                  ITP Camp, SFPC The Musical Web, DT Symposium
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="contact section reveal">
+            <div class="section-heading">
+              <p class="section-kicker">Contact</p>
+              <h2>For roles, freelance work, and thoughtful internet ideas.</h2>
+            </div>
+            <div class="contact-grid">
+              <a href="mailto:emmataylorpaydos@gmail.com">emmataylorpaydos@gmail.com</a>
+              <a href="https://github.com/lizard-ctrl" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.are.na/taylor-paydos" target="_blank" rel="noreferrer">Are.na</a>
+              <a
+                href="https://open.spotify.com/user/taaaaaayloooooor?si=514066f330b944f5"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Spotify
+              </a>
+            </div>
+          </section>
+        </section>
+
+        <section class="tab-panel" data-panel="portfolio">
+        <section class="portfolio section" id="portfolio">
+          <div class="section-heading reveal">
+            <p class="section-kicker">Portfolio</p>
           </div>
 
-          <div class="hero-copy">
-            <p class="eyebrow">Digital Producer + Designer</p>
-            <h1>
-              EMMA
-              <span>TAYLOR</span>
-              PAYDOS
-            </h1>
-            <p class="hero-text">
-              Design-forward digital producer building websites, campaigns,
-              and online experiences with editorial instinct, technical range,
-              and a sharp visual point of view.
+          <div class="portfolio-intro reveal">
+            <p>
+              A select range of work is shown here. More is available on request.
             </p>
           </div>
 
-          <div class="hero-notes" aria-label="Areas of focus">
-            <span class="note note-one">web production</span>
-            <span class="note note-two">campaign design</span>
-            <span class="note note-three">internet culture</span>
-            <span class="note note-four">creative systems</span>
-           
-          </div>
+          <div class="portfolio-columns">
+            <article class="portfolio-group reveal">
+              <div class="portfolio-head">
+                <p class="section-kicker">Design</p>
+              </div>
+              <div class="portfolio-gallery">
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/1.png" alt="Design work preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/2.png" alt="Design work detail" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/4.png" alt="Design composition preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/5.png" alt="Design composition detail" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/6.png" alt="Brand and campaign design preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/65.png" alt="Campaign design preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/7.png" alt="Graphic design work preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/9.png" alt="Graphic design detail" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/AGV_vUcP8hYLOBV3nXMxuZRh13blnrzTLKQQhwo9j1D427jZ12lcs3aKla_GJCUyVuR3vZpzHOHHYuLzg5wf7pZzEtxzEf-5H52v6WA5JXgfWbz0w9T77b6n1pqZlJLWhxNJIXN61dCJhWq7i_iWH4wNGTN_0WX1ytZR=s2048.jpg" alt="Marketing design example" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/AGV_vUcTYzva5HELoMIbK5S_AWgJwknW7Nf_cmLhDeA9QHVJefwDXJIcZ0Cqwa0_Jcie01ibv0QkkDxyTZo-Dt744_lQJZ4rISyd68LQLY1MghNG50LZM_oVy4PQ4gO31WAj1nufO0te9oNwlOnVX0zUt_pXGOANCIe5=s2048.gif" alt="Animated campaign design example" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/AGV_vUenHkOk-br6GXNm22d2pcRuUmicSQjYddz3zrMzR2gyNrGxoNowi7fEys733h8pYpHZ-_hqfFzO6AbNPopZAv37E7j2Leemxt5u6wOFsXlIun2DjBcadcQ-8hARrtcR-k4hgiP9bYIjrmUj9irznUR-uZ2a8LNb=s2048.png" alt="Campaign design layout example" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/AGV_vUfxIr_P6kFZsmTNB5s5-VzgC_pUNNY-uGL378KlKKi6jLEfjvYp2Ih37rkHPM84f06lTYQ10cdCNAqFAHpu30NUlnyckNbTNUVnGIHMK1vFUYzYIopgdMnmXCl8Gy85GhRvApiqfI5-SmjVz2SydgJRTQiAXafk=s2048.gif" alt="Animated digital campaign detail" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/Group 3.png" alt="Design system composition" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/Screen Shot 2026-07-08 at 4.45.15 PM.png" alt="Website or campaign screenshot" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/Screen Shot 2026-07-08 at 4.45.28 PM.png" alt="Website or campaign screenshot detail" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/Screen Shot 2026-07-08 at 4.45.48 PM.png" alt="Website or campaign screenshot alternate view" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/haaand.png" alt="HAAND design work preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/haand.png" alt="HAAND design work detail" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/other/hand.png" alt="HAAND design work alternate view" loading="lazy" />
+                </figure>
+              </div>
+            </article>
 
-          <div class="hero-meta">
-            <div class="meta-card reveal">
-              <p class="meta-label">Current</p>
-              <p class="meta-value">Digital Producer at Phillips Auction House</p>
-            </div>
-            <div class="meta-card reveal">
-              <p class="meta-label">Also</p>
-              <p class="meta-value">Designer at Coco Marketing</p>
-            </div>
-            <div class="meta-card reveal">
-              <p class="meta-label">Open to</p>
-              <p class="meta-value">freelance + collaborations</p>
-            </div>
+            <article class="portfolio-group reveal">
+              <div class="portfolio-head">
+                <p class="section-kicker">Web</p>
+              </div>
+              <div class="portfolio-gallery">
+                <figure class="portfolio-card">
+                  <img src="imgs/design/web/2cups1.gif" alt="Web design work preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/web/critical.gif" alt="Critical Coding Cookbook web design preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/web/d1.gif" alt="Website motion design preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/web/editathon.gif" alt="Editathon website preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/web/primal1.gif" alt="Primal web design preview" loading="lazy" />
+                </figure>
+                <figure class="portfolio-card">
+                  <img src="imgs/design/web/primal2.gif" alt="Primal web design detail" loading="lazy" />
+                </figure>
+              </div>
+            </article>
           </div>
         </section>
-
-        <section class="about section reveal" id="about">
-          <div class="section-heading">
-            <p class="section-kicker">About</p>
-            <h2>Creating refined digital systems where brand, design, and usability meet.</h2>
-          </div>
-          <div class="about-grid">
-            <div class="about-copy">
-              <p>
-                I currently live in Brooklyn and work across two roles spanning tech and design, which gives me a hybrid perspective that’s both systems-driven and visually grounded. Moving between these worlds allows me to connect creative direction with technical execution in a way that feels both practical and conceptually informed.
-              </p>
-              <p>
-                At Phillips in New York, I manage digital production and assets for auction experiences, overseeing the full publishing workflow across CMS, Shopify, and web platforms. I ensure sale pages, campaign assets, and editorial content are accurately built, maintained, and launched across channels in a fast-moving, detail-heavy environment.
-              </p>
-              <p>
-                I am especially interested in internet aesthetics, editorial
-                worlds, speculative futures, and the kinds of visual details
-                that make a brand feel unmistakable.
-              </p>
-            </div>
-            <div class="about-list">
-              <div class="detail-block">
-                <p class="detail-label">Focus</p>
-                <p>
-                  Digital production, web design, campaign systems, creative
-                  direction support
-                </p>
-              </div>
-              <div class="detail-block">
-                <p class="detail-label">Tools</p>
-                <p>
-                  HTML, CSS, JavaScript, Python, Processing, p5.js, Adobe
-                  Creative Suite, Airtable, WordPress
-                </p>
-              </div>
-              <div class="detail-block">
-                <p class="detail-label">Interests</p>
-                <p>
-                  Surveillance tech, nostalgia online, poetic uses of data, contemporary culture, surfing the web, perfumes, rollerblading, baking
-                </p>
-              </div>
-            </div>
-          </div>
         </section>
 
+        <section class="tab-panel" data-panel="resume">
         <section class="resume section" id="resume">
           <div class="section-heading reveal">
             <p class="section-kicker">Resume</p>
@@ -235,7 +459,9 @@
             </div>
           </div>
         </section>
+        </section>
 
+        <section class="tab-panel" data-panel="contact">
         <section class="contact section reveal" id="contact">
           <div class="section-heading">
             <p class="section-kicker">Contact</p>
@@ -253,6 +479,7 @@
               Spotify
             </a>
           </div>
+        </section>
         </section>
       </main>
     </div>
